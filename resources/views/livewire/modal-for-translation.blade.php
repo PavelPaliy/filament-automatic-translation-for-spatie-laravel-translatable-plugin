@@ -2,7 +2,7 @@
     {{ $this->mainForm }}
     @if($isFieldsAreTranslating)
         <div class="my-4">
-            {{ __("Переведено") }} <span class="percent-of-translated">0%</span>
+            {{ __("automatic-translation::forms.fields.percent-of-translated") }} <span class="percent-of-translated">0%</span>
         </div>
     @endif
     <div class="my-4">

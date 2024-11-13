@@ -7,5 +7,6 @@ return [
         'submit'=>'Перевести',
         'title'=>'Перевести',
         'action'=>'Перевести',
+        'percent-of-translated'=>'Переведено'
     ]
 ];
