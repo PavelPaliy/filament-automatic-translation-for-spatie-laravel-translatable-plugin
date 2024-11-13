@@ -27,6 +27,10 @@ class AutomaticTranslationServiceProvider extends \Spatie\LaravelPackageTools\Pa
         define("AUTOMATIC_TRANSLATION_ROOT_DIR", __DIR__);
         $this->loadTranslationsFrom(__DIR__.'/../lang', 'automatic-translation');
 
+        $this->publishes([
+            __DIR__.'/../lang' => $this->app->langPath('vendor/automatic-translation'),
+        ], 'automatic-translation');
+
     }
 
     public function packageBooted(): void
