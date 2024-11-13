@@ -3,5 +3,6 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/admin/iframe',function (){
-    return view('automatic-translation::iframe');
+    $includedLanguages = implode(",", filament('spatie-laravel-translatable')->getDefaultLocales());
+    return view('automatic-translation::iframe', compact('includedLanguages'));
 });

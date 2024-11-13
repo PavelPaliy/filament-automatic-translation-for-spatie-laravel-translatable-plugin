@@ -2,9 +2,6 @@
 <html>
 <body>
 
-@php
-    $includedLanguages = "ru,uk,en";
-@endphp
 <div id="google_translate_element"></div>
 <div id = "fields">
 
