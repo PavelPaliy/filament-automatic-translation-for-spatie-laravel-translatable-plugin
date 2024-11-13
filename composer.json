@@ -1,0 +1,28 @@
+{
+    "name": "pavelpaliy/automatic-translation-for-spatie-laravel-translatable-plugin",
+    "description": "The plugin automatically translates multilingual fields",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Pavelpaliy\\AutomaticTranslationForSpatieLaravelTranslatablePlugin\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pavel Paliy",
+            "email": "paliipavel@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pavelpaliy\\AutomaticTranslationForSpatieLaravelTranslatablePlugin\\AutomaticTranslationServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "filament/support": "^3.2"
+    }
+}
