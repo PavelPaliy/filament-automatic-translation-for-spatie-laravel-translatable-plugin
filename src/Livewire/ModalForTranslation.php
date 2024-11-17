@@ -14,6 +14,8 @@ class ModalForTranslation extends Component implements HasForms
 {
     use InteractsWithForms;
     public ?array $mainData = [];
+
+    public array $locales;
     public bool $isFieldsAreTranslating = false;
     public Model $record;
     public function render()
@@ -59,7 +61,8 @@ class ModalForTranslation extends Component implements HasForms
     public function mainForm(Form $form): Form
     {
         $options = [];
-        foreach (filament('spatie-laravel-translatable')->getDefaultLocales() as $locale) {
+        $this->locales = count($this->locales) === 0 ? filament('spatie-laravel-translatable')->getDefaultLocales() : $this->locales;
+        foreach ($this->locales as $locale) {
             $options[$locale] = filament('spatie-laravel-translatable')->getLocaleLabel($locale);
         }
         return $form

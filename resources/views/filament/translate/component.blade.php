@@ -1,6 +1,13 @@
 @php
 
     $iframeForTranslateJsTime = filemtime(public_path()."/js/app/iframe-for-translate.js");
+    $resourceClass = $this->getResource();
+    $resourceObj = new $resourceClass();
+    if(method_exists($resourceObj, 'getTranslatableLocales')){
+        $locales = $this->getTranslatableLocales();
+    }else{
+        $locales = [];
+    }
 @endphp
     <div
         ax-load
@@ -12,7 +19,7 @@
 
 
     >
-<livewire:modal-for-translation :record="$record ?? $this->record"/>
+<livewire:modal-for-translation :record="$record ?? $this->record" :$locales/>
         <?php
         $fileTime = filemtime(AUTOMATIC_TRANSLATION_ROOT_DIR.'/../resources/views/iframe.blade.php');
         ?>
