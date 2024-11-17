@@ -46,3 +46,5 @@ If you wish to translate the package, you may publish the language files using:
 ```bash
 php artisan vendor:publish --tag=filament-automatic-translation-for-spatie-laravel-translatable-plugin
 ```
+## Plugin demo video
+https://www.youtube.com/watch?v=_Mz3bGbqbyU
