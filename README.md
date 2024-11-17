@@ -3,8 +3,8 @@ This add-on to [Spatie Translatable](https://filamentphp.com/plugins/filament-sp
 
 ## Requirements
 
-You need the latest version of Filament v3. Also, you need to install [Spatie Translatable](https://filamentphp.com/plugins/filament-spatie-translatable) plugin.
-Also, make sure that APP_URL in .env and the URL you are working on within the browser match. For example, if APP_URL=http://localhost, then if you are working with http://127.0.0.1 in the browser, the plugin will not work.
+You need the latest version of Filament v3. You need to install [Spatie Translatable](https://filamentphp.com/plugins/filament-spatie-translatable) plugin.
+Make sure that APP_URL in .env and the URL you are working on within the browser match. For example, if APP_URL=http://localhost, then if you are working with http://127.0.0.1 in the browser, the plugin will not work.
 
 ## Installation
 
