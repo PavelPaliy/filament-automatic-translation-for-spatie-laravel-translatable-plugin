@@ -11,7 +11,7 @@ class AutomaticTranslationServiceProvider extends \Spatie\LaravelPackageTools\Pa
 
     public function configurePackage(\Spatie\LaravelPackageTools\Package $package): void
     {
-        $package->name('automatic-translation-for-spatie-laravel-translatable-plugin')
+        $package->name('filament-filament-automatic-translation-for-spatie-laravel-translatable-plugin')
             ->hasViews('ifrs')
         ->hasRoute('web');
     }
@@ -19,17 +19,17 @@ class AutomaticTranslationServiceProvider extends \Spatie\LaravelPackageTools\Pa
     public function boot(): void
     {
         parent::boot();
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'automatic-translation');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'filament-filament-automatic-translation-for-spatie-laravel-translatable-plugin');
 
         FilamentAsset::register([
             Js::make('iframe-for-translate', __DIR__ .'/../resources/js/filament/iframe-for-translate.js')->loadedOnRequest(),
         ]);
         define("AUTOMATIC_TRANSLATION_ROOT_DIR", __DIR__);
-        $this->loadTranslationsFrom(__DIR__.'/../lang', 'automatic-translation');
+        $this->loadTranslationsFrom(__DIR__.'/../lang', 'filament-filament-automatic-translation-for-spatie-laravel-translatable-plugin');
 
         $this->publishes([
-            __DIR__.'/../lang' => $this->app->langPath('vendor/automatic-translation'),
-        ], 'automatic-translation');
+            __DIR__.'/../lang' => $this->app->langPath('vendor/filament-filament-automatic-translation-for-spatie-laravel-translatable-plugin'),
+        ], 'filament-filament-automatic-translation-for-spatie-laravel-translatable-plugin');
 
     }
 

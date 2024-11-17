@@ -10,7 +10,7 @@ You need the latest version of Filament v3. Also, you need to install [Spatie Tr
 Install the plugin with Composer:
 
 ```bash
-composer require pavelpaliy/automatic-translation-for-spatie-laravel-translatable-plugin
+composer require pavelpaliy/filament-filament-automatic-translation-for-spatie-laravel-translatable-plugin
 ```
 ## Add plugin to EditRecord
 
@@ -43,5 +43,5 @@ class EditBlogPost extends EditRecord
 If you wish to translate the package, you may publish the language files using:
 
 ```bash
-php artisan vendor:publish --tag=automatic-translation
+php artisan vendor:publish --tag=filament-filament-automatic-translation-for-spatie-laravel-translatable-plugin
 ```

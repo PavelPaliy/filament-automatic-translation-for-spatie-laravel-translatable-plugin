@@ -1,5 +1,5 @@
 {
-    "name": "pavelpaliy/automatic-translation-for-spatie-laravel-translatable-plugin",
+    "name": "pavelpaliy/filament-automatic-translation-for-spatie-laravel-translatable-plugin",
     "description": "The plugin automatically translates multilingual fields",
     "type": "library",
     "license": "MIT",
