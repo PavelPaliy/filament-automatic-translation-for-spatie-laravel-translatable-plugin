@@ -21,8 +21,5 @@
             ]
         }
     },
-    "minimum-stability": "dev",
-    "require": {
-        "filament/support": "^3.2"
-    }
+    "minimum-stability": "dev"
 }
