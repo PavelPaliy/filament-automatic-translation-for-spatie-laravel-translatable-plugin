@@ -6,8 +6,9 @@
     if(method_exists($resourceObj, 'getTranslatableLocales')){
         $locales = $this->getTranslatableLocales();
     }else{
-        $locales = [];
+        $locales = filament('spatie-laravel-translatable')->getDefaultLocales();
     }
+    $localesQuery = json_encode($locales);
 @endphp
     <div
         ax-load
@@ -24,8 +25,7 @@
         $fileTime = filemtime(AUTOMATIC_TRANSLATION_ROOT_DIR.'/../resources/views/iframe.blade.php');
         ?>
 
-        <iframe src="/admin/iframe?v={{ $fileTime }}" id = "iframe-for-translate"
-
+        <iframe src="/admin/iframe?v={{ $fileTime }}&locales={{ $localesQuery }}" id = "iframe-for-translate"
                 style="position: fixed; top:0; z-index: -1; width: 100%; height: 100%; opacity:0.00001;"
 
         ></iframe>
