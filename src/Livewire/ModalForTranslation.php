@@ -20,7 +20,7 @@ class ModalForTranslation extends Component implements HasForms
     public Model $record;
     public function render()
     {
-        return view('automatic-translation::livewire.modal-for-translation');
+        return view('filament-automatic-translation-for-spatie-laravel-translatable-plugin::livewire.modal-for-translation');
     }
 
     public function mount(): void
@@ -68,11 +68,11 @@ class ModalForTranslation extends Component implements HasForms
         return $form
             ->schema([
                 Select::make('translate_from')
-                    ->label(__('automatic-translation::forms.fields.translate_from'))
+                    ->label(__('filament-automatic-translation-for-spatie-laravel-translatable-plugin::forms.fields.translate_from'))
                     ->required()
                     ->options($options),
                 Select::make('translate_to')
-                    ->label(__('automatic-translation::forms.fields.translate_to'))
+                    ->label(__('filament-automatic-translation-for-spatie-laravel-translatable-plugin::forms.fields.translate_to'))
                     ->required()
                     ->options($options),
             ])

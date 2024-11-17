@@ -16,9 +16,9 @@ class TranslateAction extends Action
     {
         parent::setUp();
 
-        $this->label(__("automatic-translation::forms.fields.action"))
-            ->modalHeading(__("automatic-translation::forms.fields.title"))
-            ->modalContentFooter(fn (): View => view('automatic-translation::filament.translate.component'))
+        $this->label(__("filament-automatic-translation-for-spatie-laravel-translatable-plugin::forms.fields.action"))
+            ->modalHeading(__("filament-automatic-translation-for-spatie-laravel-translatable-plugin::forms.fields.title"))
+            ->modalContentFooter(fn (): View => view('filament-automatic-translation-for-spatie-laravel-translatable-plugin::filament.translate.component'))
             ->modalSubmitAction(false)
             ->extraModalWindowAttributes(['class' => 'translate-fields-modal'])
             ->modalCancelAction(false);

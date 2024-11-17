@@ -4,13 +4,14 @@ This add-on to [Spatie Translatable](https://filamentphp.com/plugins/filament-sp
 ## Requirements
 
 You need the latest version of Filament v3. Also, you need to install [Spatie Translatable](https://filamentphp.com/plugins/filament-spatie-translatable) plugin.
+Also, make sure that APP_URL in .env and the URL you are working on within the browser match. For example, if APP_URL=http://localhost, then if you are working with http://127.0.0.1 in the browser, the plugin will not work.
 
 ## Installation
 
 Install the plugin with Composer:
 
 ```bash
-composer require pavelpaliy/filament-filament-automatic-translation-for-spatie-laravel-translatable-plugin
+composer require pavelpaliy/filament-automatic-translation-for-spatie-laravel-translatable-plugin
 ```
 ## Add plugin to EditRecord
 
@@ -43,5 +44,5 @@ class EditBlogPost extends EditRecord
 If you wish to translate the package, you may publish the language files using:
 
 ```bash
-php artisan vendor:publish --tag=filament-filament-automatic-translation-for-spatie-laravel-translatable-plugin
+php artisan vendor:publish --tag=filament-automatic-translation-for-spatie-laravel-translatable-plugin
 ```

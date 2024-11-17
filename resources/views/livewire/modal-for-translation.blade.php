@@ -2,7 +2,7 @@
     {{ $this->mainForm }}
     @if($isFieldsAreTranslating)
         <div class="my-4">
-            {{ __("automatic-translation::forms.fields.percent-of-translated") }} <span class="percent-of-translated">0%</span>
+            {{ __("filament-automatic-translation-for-spatie-laravel-translatable-plugin::forms.fields.percent-of-translated") }} <span class="percent-of-translated">0%</span>
         </div>
     @endif
     <div class="my-4">
@@ -10,7 +10,7 @@
             wire:click="translate"
             color="primary"
         >
-            {{ __("automatic-translation::forms.fields.submit") }}
+            {{ __("filament-automatic-translation-for-spatie-laravel-translatable-plugin::forms.fields.submit") }}
         </x-filament::button>
     </div>
 
